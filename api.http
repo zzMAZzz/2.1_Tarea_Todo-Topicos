@@ -1,0 +1,63 @@
+### ============================================
+### USUARIOS
+### ============================================
+
+### Consulta de todos los usuarios
+GET http://localhost:3000/users
+
+### Consulta de un usuario por id
+GET http://localhost:3000/users/1
+
+### Crear un nuevo usuario
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Miguel Zelaya",
+  "email": "mzelayaf@unah.hn"
+}
+
+### Actualizar un usuario
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+  "name": "Miguel Angel Zelaya"
+}
+
+### Eliminar un usuario
+DELETE http://localhost:3000/users/1
+
+### ============================================
+### TAREAS (TODOS)
+### ============================================
+
+### Consulta de todas las tareas
+GET http://localhost:3000/todos
+
+### Consulta de una tarea por id
+GET http://localhost:3000/todos/fedcb401-ed06-4a3b-a667-4beebac2d9b4
+
+### Crear una nueva tarea
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+  "title": "Agregar metodo de delete",
+  "description": "Tarea para realizar en clase",
+  "completed": false,
+  "userId": 1
+}
+
+### Actualizacion una nueva tarea
+PUT http://localhost:3000/todos/fedcb401-ed06-4a3b-a667-4beebac2d9b4
+Content-Type: application/json
+
+{
+  
+  "description": "Prueba de edicion de tareas"
+  
+}
+
+### Eliminar una tarea
+DELETE http://localhost:3000/todos/fedcb401-ed06-4a3b-a667-4beebac2d9b4
